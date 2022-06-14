@@ -1,0 +1,23 @@
+@import 'config';
+
+.container {
+  padding: 0.625rem 0;
+  user-select: none;
+  a {
+    border-bottom: 1px dashed $primary-color;
+    padding: 0px 0px 2px 0px;
+  }
+  ul {
+    padding: 0.625rem 0;
+    width: 15%;
+    margin: -0.625rem 0px -0.625rem 0px;
+    min-width: 13.438rem;
+
+    li {
+      padding: 0.625rem 0px 0.625rem 0px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+@import 'config';
+
+.searchBox {
+  .searchBar {
+    display: flex;
+    input {
+      border-top-left-radius: 6px;
+      border-bottom-left-radius: 6px;
+      flex: 1;
+    }
+    button {
+      border-top-right-radius: 6px;
+      border-bottom-right-radius: 6px;
+    }
+  }
+  .subBar {
+    display: flex;
+    align-items: center;
+    margin: 5px 0px;
+    & > *:first-child {
+      min-width: 4.063rem;
+      margin-right: 0.625rem;
+    }
+  }
+}

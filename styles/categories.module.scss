@@ -1,0 +1,28 @@
+@import 'config';
+
+.categories {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 -1.875rem;
+  padding: 1.875rem 0;
+
+  li {
+    padding: 0 1.875rem;
+    font-weight: 600;
+    transition: all 0.2s ease-in;
+
+    &.active {
+      color: $secondary-color;
+
+      a {
+        border-bottom: 2px dotted;
+        padding-bottom: 3px;
+      }
+    }
+
+    @media (min-width: $sm) {
+      font-size: 1.125rem;
+    }
+  }
+}

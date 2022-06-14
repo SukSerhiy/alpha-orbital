@@ -1,0 +1,52 @@
+@import 'config';
+
+.listItem {
+  padding: 1.25rem 0;
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+
+  .image {
+    min-width: 200px;
+    margin: 0px 1.25rem 0px 0px;
+  }
+
+  .content {
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .fullArticle {
+    color: $secondary-color;
+    font-size: 1.375rem;
+    font-weight: 500;
+  }
+
+  h4 {
+    font-size: 1.25rem;
+    margin: 0px 0px 0.938rem 0px;
+  }
+
+  time {
+    color: #a6a0a0;
+  }
+
+  .excerpt {
+    line-height: 1.6;
+  }
+
+  .remove {
+    display: none;
+    position: absolute;
+    right: 0;
+    padding: 7px 13px;
+  }
+
+  &:hover {
+    .remove {
+      display: block;
+    }
+  }
+}
